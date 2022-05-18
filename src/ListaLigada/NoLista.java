@@ -5,7 +5,7 @@ public class NoLista<T> {
     private T element;
     private NoLista next;
 
-    public NoLista(Object element) {
+    public NoLista(T element) {
         this.element = (T) element;
     }
 

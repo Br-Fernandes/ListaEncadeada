@@ -1,8 +1,14 @@
 package pilhas;
 
+import ListaLigada.NoLista;
+
 public class TestePilha<T> {
 
     public static void main(String[] args) {
+
+        NoLista<String> batata = new NoLista<>("Anne");
+
+        System.out.println();
 
         Pilha<String> p1 = new Pilha<>();
 
@@ -13,7 +19,7 @@ public class TestePilha<T> {
         System.out.println(p1.top());
         System.out.println(p1.isEmpty());
         System.out.println(p1.toString());
-        //p1.pop();
+        p1.pop();
         System.out.println(p1.top());
 
     }

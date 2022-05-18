@@ -34,23 +34,21 @@ public class Pilha<T> {
 
     }
 
-    public String top() {
-        return (String) this.elemento.getList().getElement();
+    public T top() {
+        return (T) this.elemento.getList().getElement();
 
-    }
-
-    @Override
-    public String toString() {
-        return "Pilha{" +
-                "topo=" + getTopo() +
-                ", elemento=" + elemento.getList().getNext().getElement() +
-                '}';
     }
 
     public T getTopo() {
         return (T) this.elemento.getList().getElement();
 
     }
+
+   public String toString() {
+        return  "topo= " + getTopo() +
+                "elementos [ " +getElemento().getList().getNext().getElement();
+
+   }
 
     public void setTopo(int topo) {
         this.topo = topo;

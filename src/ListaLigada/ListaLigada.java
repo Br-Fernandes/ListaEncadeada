@@ -73,19 +73,22 @@ public class ListaLigada<T> {
             previous = actual;
             actual = actual.getNext();
 
+
             if (actual.getElement().equals(element)) {
-                if (actual == list) {
-                    this.list = actual.getNext();
-                    actual.setNext(null);
+                    if (actual == list) {
+                        this.list = actual.getNext();
+                        actual.setNext(null);
+
+                    }
+                    previous.setNext(actual.getNext());
+                    actual = null;
+                    break;
 
                 }
-                previous.setNext(actual.getNext());
-                actual = null;
-                break;
 
             }
 
-        }
+
         this.size--;
 
     }
