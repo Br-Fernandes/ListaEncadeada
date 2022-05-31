@@ -131,10 +131,10 @@ public class Pilha<T> {
         int fechaParentes = 0;
 
         for (int i=0;i<a.length;i++){
-            if (a[i].equals('(')) {
+            if (a[i].equals("(")) {
                 abreParenteses++;
 
-            } else if (a[i].equals(')')) {
+            } else if (a[i].equals(")")) {
                 fechaParentes++;
 
             }
@@ -148,6 +148,8 @@ public class Pilha<T> {
             return false;
 
     }
+
+    
 
     public int getTopo() {
         return topo;

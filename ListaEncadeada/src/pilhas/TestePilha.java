@@ -10,7 +10,7 @@ public class TestePilha<T> {
 
         Pilha<String> p1 = new Pilha<>();
 
-        p1.push("3*((3+6)))))) / 1-(12+5)");
+        p1.push("(3)*(3+6) / 1-(12+5)");
 
         System.out.println(p1.parentizacaoCorreta());
 
