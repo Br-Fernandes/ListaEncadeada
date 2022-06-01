@@ -15,9 +15,10 @@ public class No<T> {
     }
 
     public No(T info, No<T> esq, No<T> dir) {
-        this.info = info;
-        this.esq = esq;
-        this.dir = dir;
+        setInfo(info);
+        setEsqNo(esq);
+        setDir(dir);
+
     }
 
     //getters e setters

@@ -14,7 +14,12 @@ public class ArvoreBinaria<T> {
 
     }
 
-    public String preOrdem() {
+    public String preOrdem(No<T> r) {
+        if (raiz == null) {
+            return "Arvore vazia";
+
+        } else if (*)
+
         return "";
     }
 
@@ -23,14 +28,23 @@ public class ArvoreBinaria<T> {
 
     }
 
-    public String posOrdem() {
-        return "";
+    public String posOrdem(No<T> r) {
+        if (raiz == null) {
+            return "Arvoré vazia";
+
+        } else if (raiz.getEsq() != null) {
+            posOrdem(raiz.getEsq());
+
+        } else if (raiz.getDir() != null) {
+            posOrdem(raiz.getDir());
+
+        }
+        return String.valueOf(raiz);
     }
 
     public String emLargura() {
         return "";
     }
-
 
 
 }
