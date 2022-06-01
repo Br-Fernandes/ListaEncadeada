@@ -8,9 +8,9 @@ public class No<T> {
 
     //construtores
     public No(){
-        this.info = null;
-        this.esq = null;
-        this.dir = null;
+        setInfo(null);
+        setEsqNo(null);
+        setDir(null);
 
     }
 
@@ -21,9 +21,9 @@ public class No<T> {
 
     }
 
+
+
     //getters e setters
-
-
     public T getInfo() {
         return info;
     }
@@ -47,4 +47,14 @@ public class No<T> {
     public void setDir(No<T> dir) {
         this.dir = dir;
     }
+
+    @Override
+    public String toString() {
+        return "No{" +
+                "info=" + info +
+                ", esq=" + esq +
+                ", dir=" + dir +
+                '}';
+    }
+
 }

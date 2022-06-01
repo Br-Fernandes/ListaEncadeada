@@ -4,9 +4,6 @@ public class TesteArvore  {
 
     public static void main(String[] args) {
 
-        //Criar arvore binaria
-        ArvoreBinaria<String> arv = new ArvoreBinaria<String>();
-
         No<String> no1;
         No<String> no2 = null;
 
@@ -15,10 +12,13 @@ public class TesteArvore  {
                 new No<>("Ananda", null, null));
 
         no2 =   new No<String>("Mingau",
-                no2,
+                no1,
                 new No<>("Akira", null, null));
 
-        System.out.println(arv.posOrdem(no1));
+        //Criar arvore binaria
+        ArvoreBinaria<String> arv = new ArvoreBinaria<String>(no2);
+
+        System.out.println(arv.preOrdem());
 
     }
 
