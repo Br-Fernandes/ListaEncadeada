@@ -2,7 +2,7 @@ package ArvoreBinaria;
 
 public class ArvoreBinaria<T> {
 
-    private No<T> raiz;
+    protected No<T> raiz;
 
     public ArvoreBinaria(No<T> raiz) {
         this.raiz = raiz;

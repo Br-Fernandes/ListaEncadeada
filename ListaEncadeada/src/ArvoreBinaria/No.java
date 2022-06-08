@@ -2,9 +2,9 @@ package ArvoreBinaria;
 
 public class No<T> {
 
-    private T info;
-    private No<T> esq;
-    private No<T> dir;
+    protected T info;
+    protected No<T> esq;
+    protected No<T> dir;
 
     //construtores
     public No(){
@@ -13,6 +13,13 @@ public class No<T> {
         setDir(null);
 
     }
+
+    public No(T info) {
+        setInfo(info);
+
+    }
+
+
 
     public No(T info, No<T> esq, No<T> dir) {
         setInfo(info);
