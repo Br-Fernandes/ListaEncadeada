@@ -1,6 +1,8 @@
 package ArvoreBinaria;
 
-public class No<T> {
+import ArvoreBinariaBusca.ArvBiBusca;
+
+public class No<T> extends ArvBiBusca<Integer> {
 
     protected T info;
     protected No<T> esq;
